@@ -1,1 +1,183 @@
-/* your code here */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #7ae581; /* Adjusted to match the green shade */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.product {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 500px; /* Adjusted height */
+  width: 800px; /* Fixed width to better match the design */
+}
+
+.product__photo {
+  flex: 1;
+  padding: 20px;
+  background-color: #b6e941; /* Matching the background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-container {
+  position: relative;
+  background-color: #b6e941; /* Light green to match the main background */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.photo-main img {
+  width: 100%;
+  max-width: 280px; /* Slightly larger image size */
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px; /* More padding to space out the controls */
+}
+
+.controls i {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.photo-album {
+  margin-top: 15px; /* Reduced margin for closer alignment */
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* Centered the thumbnails */
+}
+
+.photo-album ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.photo-album ul li {
+  width: 60px; /* Fixed size for thumbnails */
+  height: 60px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Softer shadow for thumbnails */
+  overflow: hidden;
+}
+
+.photo-album ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure full coverage in the thumbnail */
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.photo-album ul li img:hover {
+  transform: scale(1.1);
+}
+
+.product__info {
+  flex: 1.5;
+  padding: 20px;
+  position: relative;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 28px; /* Larger title font size */
+}
+
+.title span {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+  display: block;
+}
+
+.price {
+  margin: 20px 0;
+  font-size: 24px;
+  color: #e60000;
+  font-weight: bold;
+}
+
+.variant h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.variant ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.variant ul li {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.variant ul li img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.variant ul li img:hover {
+  transform: scale(1.1);
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.description h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.description ul {
+  list-style: none;
+  padding: 0;
+  color: #666;
+}
+
+.description ul li {
+  margin-bottom: 5px;
+}
+
+.btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #ea473c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #69211c;
+}
